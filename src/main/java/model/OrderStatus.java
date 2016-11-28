@@ -1,18 +1,25 @@
-package model;
+package model.impl;
 
 /**
- * Created by Vic on 24-Nov-16.
+ * Created by dell on 24-Nov-16.
  */
-public interface OrderStatus {
-    /**
-     * @param code  - for programming
-     */
-    void setCode(String code);
-    String getCode();
+public class OrderStatusImpl  {
+    protected String code;
+    protected String name;
 
-    /**
-     * @param name  - for interface
-     */
-    void setName(String name);
-    String getName();
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
