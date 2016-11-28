@@ -3,13 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="Notebook" class="model.impl.Notebook">
-        <constructor-arg index="0" value="SONY"/>
-        <constructor-arg index="1" value="Odessa"/>
-        <constructor-arg index="2" value="8g"/>
-        <constructor-arg index="3" value="SONY1309"/>
-        <constructor-arg index="4" value="765"/>
-        <constructor-arg index="5" value="657489"/>
+    <bean id="Notebook" class="model.Notebook">
+        <constructor-arg index="0" value="1"/>
+        <constructor-arg index="1" value="SONY"/>
+        <constructor-arg index="2" value="Odessa"/>
+        <constructor-arg index="3" value="8g"/>
+        <constructor-arg index="4" value="SONY1309"/>
+        <constructor-arg index="5" value="765"/>
+        <constructor-arg index="6" value="657489"/>
+        <constructor-arg index="7" value="tyej0"/>
     </bean>
 
 </beans>
