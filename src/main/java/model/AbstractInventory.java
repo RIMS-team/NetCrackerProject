@@ -1,13 +1,15 @@
-package model.impl;
-
-import model.Inventory;
+package model;
 
 /**
  * Created by Kristina on 23.11.2016.
  */
-abstract class AbstractInventory implements Inventory {
+abstract class AbstractInventory extends Entity {
 
     protected String status;
+
+    public AbstractInventory() {
+        throw new IllegalArgumentException();
+    }
 
     public String getStatus() {
         return status;
