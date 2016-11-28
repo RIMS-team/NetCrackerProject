@@ -1,9 +1,9 @@
-package model.impl;
+package model;
 
 /**
  * Created by dell on 24-Nov-16.
  */
-public class OrderStatusImpl  {
+public class OrderStatus {
     protected String code;
     protected String name;
 

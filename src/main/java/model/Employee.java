@@ -1,36 +1,35 @@
-package model.impl;
-
-import model.Employee;
+package model;
 
 /**
  * Created by barmin on 23.11.2016.
  */
-public class EmployeeImpl extends Entity implements Employee {
-    int employeeID;
+public class Employee extends Entity {
+    //int employeeID;
     int phoneNumber;
     String fullName;
     String eMail;
 
-    public EmployeeImpl(){}
+    public Employee(){}
 
-    public EmployeeImpl(int employeeID, int phoneNumber, String fullName, String eMail) {
-        this.employeeID = employeeID;
+    public Employee(int id, int phoneNumber, String fullName, String eMail) {
+        this.id = id;
+        //this.employeeID = employeeID;
         this.phoneNumber = phoneNumber;
         this.fullName = fullName;
         this.eMail = eMail;
     }
 
     public String toString(){
-        return "employeeID = " + employeeID + "phoneNumber = " + phoneNumber + "fullName = " + fullName + "eMail = " + eMail;
+        return super.toString() + " phoneNumber = " + phoneNumber + " fullName = " + fullName + " eMail = " + eMail;
      }
 
-    public int getEmployeeID() {
-        return employeeID;
-    }
+//    public int getEmployeeID() {
+//        return employeeID;
+//    }
 
-    public void setEmployeeID(int employeeID) {
-        this.employeeID = employeeID;
-    }
+//    public void setEmployeeID(int employeeID) {
+//        this.employeeID = employeeID;
+//    }
 
     public int getPhoneNumber() {
         return phoneNumber;

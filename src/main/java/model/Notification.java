@@ -1,15 +1,27 @@
-package model.impl;
+package model;
+
+import model.Order;
 
 import java.util.Date;
 
 /**
  * Created by dell on 24-Nov-16.
  */
-public class Notification {
+public class Notification extends Entity {
     protected Order order;
     protected Date first;
     protected Date second;
     protected Date third;
+
+    public Notification() {}
+
+    public Notification(int id, Order order, Date first, Date second, Date third) {
+        this.id = id;
+        this.order = order;
+        this.first = first;
+        this.second = second;
+        this.third = third;
+    }
 
     public void setOrder(Order order) {
         this.order = order;
@@ -41,5 +53,10 @@ public class Notification {
 
     public Date getThird() {
         return third;
+    }
+
+    public String toString() {
+        ///ToDo
+        return super.toString();
     }
 }

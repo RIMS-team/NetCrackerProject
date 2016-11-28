@@ -1,20 +1,27 @@
-package model.impl;
-
-import model.*;
+package model;
 
 import java.util.Date;
 
 /**
  * Created by Vic on 24-Nov-16.
  */
-public class Order  {
+public class Order extends Entity {
     protected OrderStatus orderStatus;
     protected User user;
     protected Employee employee;
     protected Date date;
-    protected Inventory inventory;
+    protected AbstractInventory inventory;
 
     public Order() {}
+
+    public Order(int id, OrderStatus orderStatus, User user, Employee employee, Date date, AbstractInventory inventory) {
+        this.id = id;
+        this.orderStatus = orderStatus;
+        this.user = user;
+        this.employee = employee;
+        this.date = date;
+        this.inventory = inventory;
+    }
 
     public void setOrderStatus(OrderStatus orderStatus) {
         this.orderStatus = orderStatus;
@@ -48,11 +55,16 @@ public class Order  {
         return date;
     }
 
-    public void setInventory(Inventory inventory) {
+    public void setInventory(AbstractInventory inventory) {
         this.inventory = inventory;
     }
 
-    public Inventory getInventory() {
+    public AbstractInventory getInventory() {
         return inventory;
+    }
+
+    public String toString() {
+        ///ToDo
+        return super.toString() + " orderStatus=" + orderStatus;
     }
 }

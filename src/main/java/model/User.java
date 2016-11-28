@@ -1,14 +1,14 @@
-package model.impl;
+package model;
 
 /**
  * Created by Vic on 24-Nov-16.
  */
-public class User extends EmployeeImpl {
+public class User extends Employee {
     protected String password;
 
     public User(){}
-    public User(int employeeID, int phoneNumber, String fullName, String eMail, String password){
-        super(employeeID, phoneNumber, fullName, eMail);
+    public User(int id, int phoneNumber, String fullName, String eMail, String password){
+        super(id, phoneNumber, fullName, eMail);
         this.password = password;
     }
 
