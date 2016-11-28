@@ -11,6 +11,14 @@ public class EmployeeImpl implements Employee {
     String fullName;
     String eMail;
 
+    public EmployeeImpl(){}
+    public EmployeeImpl(int employeeID, int phoneNumber, String fullName, String eMail){
+        this.employeeID = employeeID;
+        this.phoneNumber = phoneNumber;
+        this.fullName = fullName;
+        this.eMail = eMail;
+    }
+
     public int getEmployeeID() {
         return employeeID;
     }
