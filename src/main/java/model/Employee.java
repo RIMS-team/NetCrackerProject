@@ -3,7 +3,7 @@ package model;
 /**
  * Created by barmin on 23.11.2016.
  */
-public interface EmployeeModel {
+public interface Employee {
      int getEmployeeID();
 
      void setEmployeeID(int employeeID);

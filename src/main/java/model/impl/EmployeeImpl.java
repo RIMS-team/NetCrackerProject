@@ -1,11 +1,11 @@
 package model.impl;
 
-import model.EmployeeModel;
+import model.Employee;
 
 /**
  * Created by barmin on 23.11.2016.
  */
-public class EmployeeImpl implements EmployeeModel {
+public class EmployeeImpl implements Employee {
     int employeeID;
     int phoneNumber;
     String fullName;

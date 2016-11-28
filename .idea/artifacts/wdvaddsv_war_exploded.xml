@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="wdvaddsv:war exploded">
+  <artifact type="exploded-war" build-on-make="true" name="wdvaddsv:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/wdvaddsv_war_exploded</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="wdvaddsv/web/Web" />
@@ -27,6 +27,9 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:4.0.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:4.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:4.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:4.2.0.RELEASE" />
         </element>
       </element>
     </root>
