@@ -1,11 +1,9 @@
-package model.impl;
-
-import model.Inventory;
+package model;
 
 /**
  * Created by Kristina on 23.11.2016.
  */
-public class Notebook extends AbstractInventory implements Inventory {
+public class Notebook extends AbstractInventory {
 
     protected String name;
     protected String location;
@@ -14,9 +12,10 @@ public class Notebook extends AbstractInventory implements Inventory {
     protected int additionalFinanceNumber;
     protected String serialNumber;
 
-    public Notebook(String name, String location, String memoryType,
+    public Notebook(int id, String status, String name, String location, String memoryType,
                         String model, int additionalFinanceNumber, String serialNumber) {
-        this.status = IN_STOCK;
+        this.id = id;
+        this.status = status;
         this.name = name;
         this.location = location;
         this.memoryType = memoryType;
@@ -51,5 +50,20 @@ public class Notebook extends AbstractInventory implements Inventory {
 
     public String getSerialNumber() {
         return serialNumber;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Notebook{");
+        sb.append("id='").append(id).append('\'');
+        sb.append(", status='").append(status).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", location='").append(location).append('\'');
+        sb.append(", memoryType='").append(memoryType).append('\'');
+        sb.append(", model='").append(model).append('\'');
+        sb.append(", additionalFinanceNumber=").append(additionalFinanceNumber);
+        sb.append(", serialNumber='").append(serialNumber).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
