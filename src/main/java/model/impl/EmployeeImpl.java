@@ -5,11 +5,24 @@ import model.Employee;
 /**
  * Created by barmin on 23.11.2016.
  */
-public class EmployeeImpl implements Employee {
+public class EmployeeImpl extends Entity implements Employee {
     int employeeID;
     int phoneNumber;
     String fullName;
     String eMail;
+
+    public EmployeeImpl(){}
+
+    public EmployeeImpl(int employeeID, int phoneNumber, String fullName, String eMail) {
+        this.employeeID = employeeID;
+        this.phoneNumber = phoneNumber;
+        this.fullName = fullName;
+        this.eMail = eMail;
+    }
+
+    public String toString(){
+        return "employeeID = " + employeeID + "phoneNumber = " + phoneNumber + "fullName = " + fullName + "eMail = " + eMail;
+     }
 
     public int getEmployeeID() {
         return employeeID;
