@@ -19,6 +19,9 @@ public class Employee extends Entity {
         this.eMail = eMail;
     }
 
+    public Employee(String s, String s2, String s23) {
+    }
+
     public String toString(){
         return super.toString() + " phoneNumber = " + phoneNumber + " fullName = " + fullName + " eMail = " + eMail;
      }

@@ -1,13 +1,19 @@
 <html>
 <head>
-<title>NetCracker</title>
-<style type="text/css">
-
-</style>
+	<title>NetCracker</title>
+	<style type="text/css">
+		body {
+			background-image: url('http://crunchify.com/bg.png');
+		}
+	</style>
 </head>
 <body>
-	<h2>
-			Hey You..!! <br> <br>
-		</h2>
+<br>
+<div style="text-align:center">
+	<h3>
+		<a href="welcome.html">User</a>
+
+	</h3>
+</div>
 </body>
 </html>
