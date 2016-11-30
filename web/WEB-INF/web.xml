@@ -43,7 +43,6 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/welcome.jsp</url-pattern>
         <url-pattern>/welcome.html</url-pattern>
-        <url-pattern>/GwtApp.html</url-pattern>
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 
