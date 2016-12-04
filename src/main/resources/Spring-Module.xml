@@ -5,5 +5,5 @@
 
     <import resource="Spring-Datasource.xml" />
     <import resource="Spring-Employee.xml" />
-
+    <import resource="Spring-Mailer.xml" />
 </beans>
