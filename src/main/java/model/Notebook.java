@@ -12,6 +12,8 @@ public class Notebook extends AbstractInventory {
     protected int additionalFinanceNumber;
     protected String serialNumber;
 
+    public Notebook(){}
+
     public Notebook(int id, String status, String name, String location, String memoryType,
                         String model, int additionalFinanceNumber, String serialNumber) {
         this.id = id;

@@ -7,6 +7,8 @@ public class AccessCard extends AbstractInventory {
 
     private int cardId;
 
+    public AccessCard() {}
+
     public AccessCard(int id, String status, int cardId) {
         this.id = id;
         this.status = status;
