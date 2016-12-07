@@ -31,9 +31,34 @@ public class JdbcUser implements UserDAO {
     }
 
     @Override
-    public List<User> findALl() {
-        //TODO: return list of all users
-        return null;
+    public List<User> findAll() {
+        Locale.setDefault(Locale.ENGLISH);
+        TransactionDefinition def = new DefaultTransactionDefinition();
+        TransactionStatus status = transactionManager.getTransaction(def);
+        List<User> users;
+        try {
+            String sql = "SELECT USR.OBJECT_ID AS EMPLOYEE_ID, PHONE_ATTR.VALUE AS PHONE_NUMBER, FNAME_ATTR.VALUE AS FULL_NAME, EMAIL_ATTR.VALUE AS EMAIL, PASS_ATTR.VALUE as PASSWORD " +
+                    "FROM OBJECTS USR, ATTRIBUTES FNAME_ATTR, ATTRIBUTES EMAIL_ATTR, ATTRIBUTES PHONE_ATTR, ATTRIBUTES PASS_ATTR " +
+                    "WHERE USR.OBJECT_TYPE_ID = 2 " +
+                    "AND USR.OBJECT_ID = FNAME_ATTR.OBJECT_ID " +
+                    "AND USR.OBJECT_ID = EMAIL_ATTR.OBJECT_ID " +
+                    "AND USR.OBJECT_ID = PHONE_ATTR.OBJECT_ID " +
+                    "AND USR.OBJECT_ID = PASS_ATTR.OBJECT_ID " +
+                    "AND FNAME_ATTR.ATTR_ID = 1 " +
+                    "AND EMAIL_ATTR.ATTR_ID = 2 " +
+                    "AND PHONE_ATTR.ATTR_ID = 3 " +
+                    "AND PASS_ATTR.ATTR_ID = 4";
+            users = jdbcTemplateObject.query(sql, new UserMapper());
+        }catch (DataAccessException e) {
+            System.out.println("Error in select record, rolling back");
+            transactionManager.rollback(status);
+            throw e;
+        }
+        System.out.println("DAO");
+        for (User x : users){
+            System.out.println(x.getFullName());
+        }
+        return users;
     }
 
     @Override

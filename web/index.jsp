@@ -11,8 +11,8 @@
 <br>
 <div style="text-align:center">
 	<h3>
-		<a href="welcome.html">User</a>
-
+		<a href="welcome.html">Employees</a>
+		<a href="users.html">Users</a>
 	</h3>
 </div>
 </body>

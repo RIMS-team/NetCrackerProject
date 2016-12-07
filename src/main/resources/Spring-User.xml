@@ -8,4 +8,8 @@
         <property name="transactionManager" ref="transactionManager" />
     </bean>
 
+    <bean id="userServiceImpl" class="service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDAO"/>
+    </bean>
+
 </beans>
