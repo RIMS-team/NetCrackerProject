@@ -47,6 +47,8 @@
         <url-pattern>/welcome.html</url-pattern>
         <url-pattern>/users.jsp</url-pattern>
         <url-pattern>/users.html</url-pattern>
+        <url-pattern>/notebooks.jsp</url-pattern>
+        <url-pattern>/notebooks.html</url-pattern>
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 

@@ -13,6 +13,8 @@
 	<h3>
 		<a href="welcome.html">Employees</a>
 		<a href="users.html">Users</a>
+		<br>
+		<a href="notebooks.html">Notebooks</a>
 	</h3>
 </div>
 </body>
