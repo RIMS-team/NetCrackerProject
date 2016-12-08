@@ -43,9 +43,9 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/welcome.jsp</url-pattern>
         <url-pattern>/welcome.html</url-pattern>
+        <url-pattern>/cards.jsp</url-pattern>
+        <url-pattern>/cards.html</url-pattern>
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
-
-
 
 </web-app>

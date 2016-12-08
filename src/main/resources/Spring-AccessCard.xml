@@ -3,8 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <import resource="Spring-Datasource.xml" />
-    <import resource="Spring-Employee.xml" />
-    <import resource="Spring-AccessCard.xml" />
-    <import resource="Spring-Mailer.xml" />
+    <bean id="accessCardDAO" class="dao.JdbcAccessCardTemplate">
+        <property name="dataSource" ref="dataSource" />
+        <property name="transactionManager" ref="transactionManager" />
+    </bean>
+
 </beans>

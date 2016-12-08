@@ -14,6 +14,10 @@
 		<a href="welcome.html">User</a>
 
 	</h3>
+	<h3>
+		<a href="cards.html">Card</a>
+
+	</h3>
 </div>
 </body>
 </html>

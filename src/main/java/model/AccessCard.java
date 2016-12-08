@@ -3,17 +3,17 @@ package model;
 /**
  * Created by Kristina on 23.11.2016.
  */
-public class AccessCard extends AbstractInventory {
+public class AccessCard extends Inventory {
 
-    private int cardId;
+    private String cardId;
 
-    public AccessCard(int id, String status, int cardId) {
+    public AccessCard(int id, String status, String cardId) {
         this.id = id;
         this.status = status;
         this.cardId = cardId;
     }
 
-    public int getCardId() {
+    public String getCardId() {
         return cardId;
     }
 
