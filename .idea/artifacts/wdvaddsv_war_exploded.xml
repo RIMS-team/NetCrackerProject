@@ -30,8 +30,23 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:4.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:4.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:4.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: com.google.gwt:gwt-servlet:2.1.0" />
+          <element id="library" level="project" name="Maven: com.google.gwt:gwt-user:2.7.0" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.0.0.GA" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:sources:1.0.0.GA" />
+          <element id="library" level="project" name="Maven: com.oracle:ojdbc6:11.2.0.3" />
+          <element id="library" level="project" name="gwt-user" />
+          <element id="library" level="project" name="Maven: com.google.gwt:gwt-user:2.6.0" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: javax.mail:mail:1.4" />
+          <element id="library" level="project" name="Maven: org.json:json:20090211" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.3.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.2.RELEASE" />
         </element>
       </element>
+      <element id="gwt-compiler-output" facet="wdvaddsv/gwt/GWT" />
+      <element id="artifact" artifact-name="wdvaddsv:GWT" />
     </root>
   </artifact>
 </component>

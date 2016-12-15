@@ -3,7 +3,7 @@ package model;
 /**
  * Created by Kristina on 23.11.2016.
  */
-public class Notebook extends AbstractInventory {
+public class Notebook extends Inventory {
 
     protected String name;
     protected String location;

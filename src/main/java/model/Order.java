@@ -10,11 +10,11 @@ public class Order extends Entity {
     protected User user;
     protected Employee employee;
     protected Date date;
-    protected AbstractInventory inventory;
+    protected Inventory inventory;
 
     public Order() {}
 
-    public Order(int id, OrderStatus orderStatus, User user, Employee employee, Date date, AbstractInventory inventory) {
+    public Order(int id, OrderStatus orderStatus, User user, Employee employee, Date date, Inventory inventory) {
         this.id = id;
         this.orderStatus = orderStatus;
         this.user = user;
@@ -55,11 +55,11 @@ public class Order extends Entity {
         return date;
     }
 
-    public void setInventory(AbstractInventory inventory) {
+    public void setInventory(Inventory inventory) {
         this.inventory = inventory;
     }
 
-    public AbstractInventory getInventory() {
+    public Inventory getInventory() {
         return inventory;
     }
 

@@ -1,18 +1,18 @@
 package model;
 
 /**
- * Created by dell on 24-Nov-16.
+ * Created by dell on 08-Dec-16.
  */
-public class OrderStatus {
+public class InventStatus {
     protected int id;
     protected String code;
     protected String name;
     //protected String attrTypeCode;  == 'ORD_STATUS'
 
-    public OrderStatus() {
+    public InventStatus() {
     }
 
-    public OrderStatus(int id, String code, String name) {
+    public InventStatus(int id, String code, String name) {
         this.id = id;
         this.code = code;
         this.name = name;

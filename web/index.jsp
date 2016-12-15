@@ -14,6 +14,15 @@
 		<a href="welcome.html">Employees</a>
 		<a href="users.html">Users</a>
 	</h3>
+	<h3>
+		<a href="cards.html">Card</a>
+		<a href="notebooks.html">Notebooks</a>
+
+	</h3>
+        <h3>
+		<a href="orderstatus.html">Order statuses</a>
+		<a href="inventstatus.html">Inventory statuses</a>
+	</h3>
 </div>
 </body>
 </html>

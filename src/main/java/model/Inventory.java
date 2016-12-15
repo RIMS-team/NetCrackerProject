@@ -3,11 +3,11 @@ package model;
 /**
  * Created by Kristina on 23.11.2016.
  */
-abstract class AbstractInventory extends Entity {
+abstract class Inventory extends Entity {
 
     protected String status;
 
-    public AbstractInventory() {
+    public Inventory() {
         throw new IllegalArgumentException();
     }
 

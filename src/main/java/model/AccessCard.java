@@ -3,7 +3,7 @@ package model;
 /**
  * Created by Kristina on 23.11.2016.
  */
-public class AccessCard extends AbstractInventory {
+public class AccessCard extends Inventory {
 
     private int cardId;
 
